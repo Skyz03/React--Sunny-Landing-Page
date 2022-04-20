@@ -1,8 +1,10 @@
 import React from "react";
+import Nav from "./components/Nav.jsx";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <Nav />
     </div>
   );
 }
