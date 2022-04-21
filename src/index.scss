@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@700;900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -8,6 +10,9 @@
 
 body {
   background-color: #fff;
+  // font-family: 'Barlow', sans-serif;
+
+  font-family: "Fraunces", serif;
 }
 
 ul {
@@ -30,4 +35,8 @@ ul {
 .nav-links {
   display: flex;
   justify-content: space-around;
+}
+
+.nav-link {
+  text-transform: capitalize !important;
 }
