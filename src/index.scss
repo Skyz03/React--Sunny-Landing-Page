@@ -65,3 +65,39 @@ ul {
   &__img {
   }
 }
+
+// Fruits
+
+.fruits {
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    padding: 0 5rem;
+
+    h3 {
+      font-family: "Fraunces", serif;
+      font-size: 2rem;
+    }
+
+    p {
+      font-family: "Barlow", sans-serif;
+      margin: 2rem 0;
+    }
+  }
+
+  &__button {
+    background: transparent;
+    border: none;
+    border-bottom: 5px solid yellow;
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    img {
+      max-width: 711px;
+    }
+  }
+}
