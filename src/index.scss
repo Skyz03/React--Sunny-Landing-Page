@@ -40,3 +40,28 @@ ul {
 .nav-link {
   text-transform: capitalize !important;
 }
+
+// Hero section
+
+.hero {
+  position: relative;
+  background-color: #3ebfff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__text {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    position: relative;
+    top: 15%;
+    padding: 3rem;
+  }
+
+  &__img {
+  }
+}
