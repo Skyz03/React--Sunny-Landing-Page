@@ -93,11 +93,42 @@ ul {
     border-bottom: 5px solid yellow;
     font-family: "Fraunces", serif;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   &__img {
     img {
       max-width: 711px;
     }
+  }
+}
+
+// PhotoFruits section
+.photofruit {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__graphic {
+    width: 865px;
+    height: 500px;
+    background-image: url(./images/desktop/image-graphic-design1.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 10rem 3rem;
+  }
+
+  &__photography {
+    width: 868px;
+    height: 500px;
+    background-image: url(./images/desktop/image-photography.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 10rem 3rem;
   }
 }

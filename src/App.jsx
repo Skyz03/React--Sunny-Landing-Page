@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "./components/Nav.jsx";
 import Hero from "./components/Hero.jsx";
 import Fruits from "./components/Fruits.jsx";
+import PhotoFruit from "./components/PhotoFruit.jsx";
 
 import Fruit1 from "./images/desktop/image-transform.jpg";
 import Fruit2 from "./images/desktop/image-stand-out.jpg";
@@ -28,6 +29,7 @@ function App() {
         img={Fruit2}
         direction="row-reverse"
       />
+      <PhotoFruit />
     </div>
   );
 }
