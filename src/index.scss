@@ -177,3 +177,13 @@ ul {
     padding: 1em;
   }
 }
+
+// Pictures
+
+.pictures {
+  display: flex;
+
+  img {
+    width: 100%;
+  }
+}
