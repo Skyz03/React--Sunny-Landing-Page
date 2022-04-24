@@ -187,3 +187,27 @@ ul {
     width: 100%;
   }
 }
+
+// Footer
+
+.footer {
+  text-align: center;
+  padding: 3rem;
+  color: green;
+  background-color: #3ebfff;
+
+  &__links {
+    ul {
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+
+    li {
+      a {
+        color: green;
+        margin: 2rem;
+      }
+    }
+  }
+}

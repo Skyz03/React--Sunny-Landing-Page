@@ -5,6 +5,7 @@ import Fruits from "./components/Fruits.jsx";
 import PhotoFruit from "./components/PhotoFruit.jsx";
 import Testimonial from "./components/Testimonials.jsx";
 import Pictures from "./components/Pictures.jsx";
+import Footer from "./components/Footer";
 
 import Fruit1 from "./images/desktop/image-transform.jpg";
 import Fruit2 from "./images/desktop/image-stand-out.jpg";
@@ -34,6 +35,7 @@ function App() {
       <PhotoFruit />
       <Testimonial />
       <Pictures />
+      <Footer />
     </div>
   );
 }
