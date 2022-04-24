@@ -132,3 +132,48 @@ ul {
     padding: 0 10rem 3rem;
   }
 }
+
+// Testimonials
+
+.testimonials {
+  padding: 8rem 2rem;
+
+  &__header {
+    font-size: 1rem;
+    text-align: center;
+    padding: 5rem 0;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+  }
+
+  &__text {
+    display: flex;
+    text-align: center;
+  }
+
+  &__card {
+    margin: 0 2em;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 2em;
+  }
+
+  &__review {
+    font-family: "Barlow", sans-serif;
+    padding: 1em 0;
+    line-height: 2;
+    font-weight: 600;
+  }
+
+  &__pos {
+    font-size: 0.7rem;
+    font-family: "Barlow", sans-serif;
+    color: gray;
+    padding: 1em;
+  }
+}
