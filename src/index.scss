@@ -39,6 +39,25 @@ ul {
 
 .nav-link {
   text-transform: capitalize !important;
+  font-family: "Barlow", sans-serif !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  letter-spacing: 0.05em !important;
+}
+
+.contact-btn {
+  font-size: 0.8rem !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 20px !important;
+  font-weight: bold !important;
+  font-family: "Fraunces", serif !important;
+
+  &:hover {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: none !important;
+  }
 }
 
 // Hero section

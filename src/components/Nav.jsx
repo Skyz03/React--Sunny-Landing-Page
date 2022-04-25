@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../images/logo.svg";
 import {
   AppBar,
@@ -9,49 +9,40 @@ import {
   Switch,
   Paper,
 } from "@mui/material";
-import { ThemeProvider, createMuiTheme } from "@mui/material/styles";
+
+import { Link as Scroll } from "react-scroll";
 
 const Nav = () => {
-  const theme = createMuiTheme({
-    palette: {
-      type: "dark",
-    },
-  });
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return (
-    <React.Fragment>
-      <ThemeProvider theme={theme}>
-        <Paper>
-          <AppBar position="sticky" sx={{ background: "#3ebfff" }}>
-            <Toolbar>
-              <img src={logo} alt="Logo" />
+    <Paper>
+      <AppBar elevation={0} position="sticky" sx={{ background: "#3ebfff" }}>
+        <Toolbar>
+          <img src={logo} alt="Logo" />
 
-              <Tabs sx={{ marginLeft: "auto" }} textColor="#f0f" value={0}>
-                <Tab className="nav-link" label="About" />
-                <Tab className="nav-link" label="Services" />
-                <Tab className="nav-link" label="Projects" />
-              </Tabs>
+          <Tabs
+            sx={{ marginLeft: "auto" }}
+            onChange={handleChange}
+            value={value}
+          >
+            <Tab className="nav-link" label="About" />
+            <Tab className="nav-link" label="Services" />
+            <Tab className="nav-link" label="Projects" />
+          </Tabs>
 
-              <Button
-                className="contact-btn"
-                sx={{
-                  background: "#fff",
-                  color: "#000",
-                  borderRadius: "20px",
-                  fontWeight: "bold",
-                }}
-                variant="contained"
-                color="primary"
-              >
-                Contact
-              </Button>
+          <Button className="contact-btn" variant="contained">
+            Contact
+          </Button>
 
-              <Switch />
-            </Toolbar>
-          </AppBar>
-        </Paper>
-      </ThemeProvider>
-    </React.Fragment>
+          <Switch />
+        </Toolbar>
+      </AppBar>
+    </Paper>
   );
 };
 
