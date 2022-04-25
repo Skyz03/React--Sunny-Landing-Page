@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import logo from "../images/logo.svg";
 import {
   AppBar,
@@ -9,8 +9,6 @@ import {
   Switch,
   Paper,
 } from "@mui/material";
-
-import { Link as Scroll } from "react-scroll";
 
 const Nav = () => {
   const [value, setValue] = React.useState(0);
