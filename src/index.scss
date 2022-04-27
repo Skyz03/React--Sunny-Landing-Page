@@ -100,10 +100,18 @@ ul {
   &__row {
     display: flex;
     align-items: center;
+
+    @media (max-width: 650px) {
+      flex-direction: column-reverse !important;
+    }
   }
   &__text {
     padding: 0 5rem;
     width: 50%;
+
+    @media (max-width: 650px) {
+      width: 100%;
+    }
 
     h3 {
       font-family: "Fraunces", serif;
@@ -135,6 +143,10 @@ ul {
 
   &__img {
     width: 50%;
+
+    @media (max-width: 650px) {
+      width: 100%;
+    }
 
     img {
       max-width: 100%;
