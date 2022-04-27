@@ -42,7 +42,7 @@ ul {
   font-family: "Barlow", sans-serif !important;
   font-weight: 600 !important;
   color: #fff !important;
-  letter-spacing: 0.05em !important;
+  letter-spacing: 0.07em !important;
 }
 
 .contact-btn {
@@ -253,11 +253,16 @@ ul {
       a {
         color: green;
         margin: 2rem;
+        font-family: "Barlow", sans-serif;
       }
     }
   }
 
   .icons {
     margin: 0 1rem;
+
+    svg {
+      margin: 1rem 1rem 0;
+    }
   }
 }

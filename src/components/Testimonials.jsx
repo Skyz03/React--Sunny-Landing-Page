@@ -33,7 +33,7 @@ const Testimonials = (props) => {
               </p>
 
               <h4>Thomas S.</h4>
-              <p className="testimonials__pos">Marketing Director</p>
+              <p className="testimonials__pos">Cheif Operating Officer</p>
             </div>
 
             <div className="testimonials__card">
@@ -44,7 +44,7 @@ const Testimonials = (props) => {
               </p>
 
               <h4>Jennie F.</h4>
-              <p className="testimonials__pos">Marketing Director</p>
+              <p className="testimonials__pos">Business Owner</p>
             </div>
           </div>
         </div>
