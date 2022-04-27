@@ -79,6 +79,10 @@ ul {
     position: relative;
     top: 15%;
     padding: 3rem;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
   &__img {
@@ -104,11 +108,19 @@ ul {
     h3 {
       font-family: "Fraunces", serif;
       font-size: 2rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
       font-family: "Barlow", sans-serif;
       margin: 2rem 0;
+
+      @media (max-width: 768px) {
+        font-size: 0.8rem;
+      }
     }
   }
 
@@ -144,6 +156,7 @@ ul {
     width: 50%;
     height: 500px;
     background-image: url(./images/desktop/image-graphic-design1.jpg);
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -153,9 +166,17 @@ ul {
       padding: 0 7rem 3rem;
     }
 
+    @media (max-width: 768px) {
+      padding: 0 5rem 3rem;
+    }
+
     p {
       font-family: "Barlow", sans-serif;
       padding: 0.5rem 23px;
+
+      @media (max-width: 768px) {
+        font-size: 0.8rem;
+      }
     }
   }
 
@@ -163,6 +184,7 @@ ul {
     width: 50%;
     height: 500px;
     background-image: url(./images/desktop/image-photography.jpg);
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -172,9 +194,17 @@ ul {
       padding: 0 7rem 3rem;
     }
 
+    @media (max-width: 768px) {
+      padding: 0 5rem 3rem;
+    }
+
     p {
       font-family: "Barlow", sans-serif;
       padding: 0.5rem 11px;
+
+      @media (max-width: 768px) {
+        font-size: 0.8rem;
+      }
     }
   }
 }
@@ -214,6 +244,10 @@ ul {
     padding: 1em 0;
     line-height: 2;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
   }
 
   &__pos {
