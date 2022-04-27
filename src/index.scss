@@ -132,6 +132,7 @@ ul {
 
 // PhotoFruits section
 .photofruit {
+  margin-top: -5px;
   &__container {
     display: flex;
     justify-content: center;
@@ -147,6 +148,15 @@ ul {
     flex-direction: column;
     justify-content: end;
     padding: 0 10rem 3rem;
+
+    @media (max-width: 1000px) {
+      padding: 0 7rem 3rem;
+    }
+
+    p {
+      font-family: "Barlow", sans-serif;
+      padding: 0.5rem 23px;
+    }
   }
 
   &__photography {
@@ -157,6 +167,15 @@ ul {
     flex-direction: column;
     justify-content: end;
     padding: 0 10rem 3rem;
+
+    @media (max-width: 1000px) {
+      padding: 0 7rem 3rem;
+    }
+
+    p {
+      font-family: "Barlow", sans-serif;
+      padding: 0.5rem 11px;
+    }
   }
 }
 
