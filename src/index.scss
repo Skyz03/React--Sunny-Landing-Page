@@ -99,6 +99,7 @@ ul {
   }
   &__text {
     padding: 0 5rem;
+    width: 50%;
 
     h3 {
       font-family: "Fraunces", serif;
@@ -121,8 +122,10 @@ ul {
   }
 
   &__img {
+    width: 50%;
+
     img {
-      max-width: 711px;
+      max-width: 100%;
     }
   }
 }
@@ -137,7 +140,7 @@ ul {
   }
 
   &__graphic {
-    width: 865px;
+    width: 50%;
     height: 500px;
     background-image: url(./images/desktop/image-graphic-design1.jpg);
     display: flex;
@@ -147,7 +150,7 @@ ul {
   }
 
   &__photography {
-    width: 868px;
+    width: 50%;
     height: 500px;
     background-image: url(./images/desktop/image-photography.jpg);
     display: flex;
