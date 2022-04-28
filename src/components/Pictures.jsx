@@ -7,10 +7,14 @@ import pic4 from "../images/desktop/image-gallery-sugarcubes.jpg";
 const Pictures = () => {
   return (
     <section className="pictures">
-      <img src={pic1} alt="" />
-      <img src={pic2} alt="" />
-      <img src={pic3} alt="" />
-      <img src={pic4} alt="" />
+      <div>
+        <img src={pic1} alt="" />
+        <img src={pic2} alt="" />
+      </div>
+      <div>
+        <img src={pic3} alt="" />
+        <img src={pic4} alt="" />
+      </div>
     </section>
   );
 };
