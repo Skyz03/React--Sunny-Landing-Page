@@ -36,15 +36,7 @@ const Nav = () => {
 
   const theme = useTheme();
 
-  const [open, setOpen] = React.useState(false);
-
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
+  const [isDraweropen, setIsDraweropen] = React.useState(false);
 
   const [value, setValue] = React.useState(0);
 
@@ -57,15 +49,24 @@ const Nav = () => {
   return (
     <Paper>
       <AppBar elevation={0} position="sticky" sx={{ background: "#3ebfff" }}>
-        <Toolbar>
+        <Toolbar sx={{ justifyContent: "space-between" }}>
           <img src={logo} alt="Logo" />
 
-          <IconButton color="inherit" edge="end" onClick={handleDrawerOpen}>
+          <IconButton
+            size="large"
+            color="inherit"
+            edge="end"
+            onClick={() => setIsDraweropen(true)}
+          >
             <MenuIcon />
           </IconButton>
 
           {matches ? (
-            <Drawer open={open} variant="permanent" anchor="right">
+            <Drawer
+              open={isDraweropen}
+              anchor="right"
+              onClose={() => setIsDraweropen(false)}
+            >
               <div>
                 <Typography variant="h6">Menu</Typography>
               </div>
