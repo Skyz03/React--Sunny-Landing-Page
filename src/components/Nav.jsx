@@ -9,9 +9,17 @@ import {
   Switch,
   Paper,
 } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Drawer from "@mui/material/Drawer";
+import Typography from "@mui/material/Typography";
 
 const Nav = () => {
   const [value, setValue] = React.useState(0);
+
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -23,21 +31,31 @@ const Nav = () => {
         <Toolbar>
           <img src={logo} alt="Logo" />
 
-          <Tabs
-            sx={{ marginLeft: "auto" }}
-            onChange={handleChange}
-            value={value}
-          >
-            <Tab className="nav-link" label="About" />
-            <Tab className="nav-link" label="Services" />
-            <Tab className="nav-link" label="Projects" />
-          </Tabs>
+          {matches ? (
+            <Drawer variant="permanent" anchor="right">
+              <div>
+                <Typography variant="h6">Menu</Typography>
+              </div>
+            </Drawer>
+          ) : (
+            <>
+              <Tabs
+                sx={{ marginLeft: "auto" }}
+                onChange={handleChange}
+                value={value}
+              >
+                <Tab className="nav-link" label="About" />
+                <Tab className="nav-link" label="Services" />
+                <Tab className="nav-link" label="Projects" />
+              </Tabs>
 
-          <Button className="contact-btn" variant="contained">
-            Contact
-          </Button>
+              <Button className="contact-btn" variant="contained">
+                Contact
+              </Button>
 
-          <Switch />
+              <Switch />
+            </>
+          )}
         </Toolbar>
       </AppBar>
     </Paper>
