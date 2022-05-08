@@ -23,14 +23,24 @@ import IconButton from "@mui/material/IconButton";
 const Nav = () => {
   const menuItems = [
     {
-      text: "Home",
-      icon: "home",
-      link: "/",
+      text: "About",
+      icon: "👨‍💼",
+      link: "/about",
     },
     {
-      text: "About",
-      icon: "info",
-      link: "/about",
+      text: "Services",
+      icon: "🛠",
+      link: "/services",
+    },
+    {
+      text: "Projects",
+      icon: "📽",
+      link: "/projects",
+    },
+    {
+      text: "Contact",
+      icon: "📞",
+      link: "/contact",
     },
   ];
 
@@ -67,11 +77,23 @@ const Nav = () => {
               open={isDraweropen}
               anchor="right"
               onClose={() => setIsDraweropen(false)}
+              sx={{
+                "& .MuiDrawer-paper": {
+                  width: "80%",
+                  color: "#fff",
+                  background:
+                    "linear-gradient(350deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 23%, rgba(0,212,255,1) 100%)",
+                },
+                "& .MuiListItemText-primary": {
+                  fontSize: "1.2rem",
+                  letterSpacing: "0.1rem",
+                  fontFamily: "Fraunces",
+                },
+                "& .MuiButtonBase-root": {
+                  borderBottom: "1px solid #fff",
+                },
+              }}
             >
-              <div>
-                <Typography variant="h6">Menu</Typography>
-              </div>
-
               <List>
                 {menuItems.map((item, index) => (
                   <ListItem key={item.text} button>
