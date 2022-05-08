@@ -40,7 +40,7 @@ const Nav = () => {
 
   const [value, setValue] = React.useState(0);
 
-  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+  const matches = useMediaQuery(theme.breakpoints.down("sm")) ? true : false;
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -51,15 +51,16 @@ const Nav = () => {
       <AppBar elevation={0} position="sticky" sx={{ background: "#3ebfff" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <img src={logo} alt="Logo" />
-
-          <IconButton
-            size="large"
-            color="inherit"
-            edge="end"
-            onClick={() => setIsDraweropen(true)}
-          >
-            <MenuIcon />
-          </IconButton>
+          {matches ? (
+            <IconButton
+              size="large"
+              color="inherit"
+              edge="end"
+              onClick={() => setIsDraweropen(true)}
+            >
+              <MenuIcon />
+            </IconButton>
+          ) : null}
 
           {matches ? (
             <Drawer
