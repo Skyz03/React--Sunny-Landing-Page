@@ -327,6 +327,7 @@ ul {
   padding: 3rem;
   color: green;
   background-color: #3ebfff;
+  margin-top: -5px;
 
   @media (max-width: 375px) {
     margin-top: -5px;
@@ -357,6 +358,7 @@ ul {
 
     svg {
       margin: 1rem 1rem 0;
+      cursor: pointer;
     }
   }
 }
