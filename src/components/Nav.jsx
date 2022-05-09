@@ -13,12 +13,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Drawer from "@mui/material/Drawer";
-import Typography from "@mui/material/Typography";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const menuItems = [
@@ -110,14 +110,22 @@ const Nav = () => {
                 onChange={handleChange}
                 value={value}
               >
-                <Tab className="nav-link" label="About" />
-                <Tab className="nav-link" label="Services" />
+                <Link to="/about">
+                  {" "}
+                  <Tab className="nav-link" label="About" />{" "}
+                </Link>
+                <Link to="/services">
+                  {" "}
+                  <Tab className="nav-link" label="Services" />
+                </Link>
                 <Tab className="nav-link" label="Projects" />
               </Tabs>
-
-              <Button className="contact-btn" variant="contained">
-                Contact
-              </Button>
+              <Link to="/contact">
+                {" "}
+                <Button className="contact-btn" variant="contained">
+                  Contact
+                </Button>
+              </Link>
 
               <Switch />
             </>

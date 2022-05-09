@@ -10,6 +10,9 @@ import Footer from "./components/Footer";
 import Fruit1 from "./images/desktop/image-transform.jpg";
 import Fruit2 from "./images/desktop/image-stand-out.jpg";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contact from "./pages/Contact";
+
 function App() {
   const content1 =
     "We are a full-service creative agency specilalizing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.";
@@ -18,23 +21,44 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
-      <Hero />
-      <Fruits
-        heading="Transform your brand"
-        content={content1}
-        img={Fruit1}
-        direction="row"
-      />
-      <Fruits
-        heading="Stand out to the right audience"
-        content={content2}
-        img={Fruit2}
-        direction="row-reverse"
-      />
-      <PhotoFruit />
-      <Testimonial />
-      <Pictures />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Nav />
+                <Hero />
+                <Fruits
+                  heading="Transform your brand"
+                  content={content1}
+                  img={Fruit1}
+                  direction="row"
+                />
+                <Fruits
+                  heading="Stand out to the right audience"
+                  content={content2}
+                  img={Fruit2}
+                  direction="row-reverse"
+                />
+                <PhotoFruit />
+                <Testimonial />
+                <Pictures />
+              </>
+            }
+          />
+          <Route
+            path="contact"
+            element={
+              <>
+                <Nav />
+                <Contact />
+              </>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
+
       <Footer />
     </div>
   );

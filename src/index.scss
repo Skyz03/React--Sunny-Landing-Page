@@ -184,7 +184,7 @@ ul {
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 0 10rem 3rem;
 
     @media (max-width: 1000px) {
@@ -221,7 +221,7 @@ ul {
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 0 10rem 3rem;
 
     @media (max-width: 1000px) {
