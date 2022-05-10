@@ -60,7 +60,10 @@ const Nav = () => {
     <Paper>
       <AppBar elevation={0} position="sticky" sx={{ background: "#3ebfff" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <img src={logo} alt="Logo" />
+          <Link to="/">
+            {" "}
+            <img src={logo} alt="Logo" />{" "}
+          </Link>
           {matches ? (
             <IconButton
               size="large"
@@ -98,7 +101,10 @@ const Nav = () => {
                 {menuItems.map((item, index) => (
                   <ListItem key={item.text} button>
                     <ListItemIcon>{item.icon}</ListItemIcon>
-                    <ListItemText primary={item.text} />
+                    <Link to={item.link}>
+                      {" "}
+                      <ListItemText primary={item.text} />
+                    </Link>
                   </ListItem>
                 ))}
               </List>
