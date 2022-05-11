@@ -66,6 +66,20 @@ ul {
   }
 }
 
+// drawer
+.drawer-list {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.dra-list {
+  padding: 2rem;
+}
+
 // Hero section
 
 @keyframes pulse {

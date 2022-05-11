@@ -77,6 +77,7 @@ const Nav = () => {
 
           {matches ? (
             <Drawer
+              className="drawer-list"
               open={isDraweropen}
               anchor="right"
               onClose={() => setIsDraweropen(false)}
@@ -84,8 +85,7 @@ const Nav = () => {
                 "& .MuiDrawer-paper": {
                   width: "80%",
                   color: "#fff",
-                  background:
-                    "linear-gradient(350deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 23%, rgba(0,212,255,1) 100%)",
+                  background: "#3ebfff",
                 },
                 "& .MuiListItemText-primary": {
                   fontSize: "1.2rem",
@@ -97,7 +97,8 @@ const Nav = () => {
                 },
               }}
             >
-              <List>
+              <List className="dra-list">
+                <img src={logo} alt="Logo" />{" "}
                 {menuItems.map((item, index) => (
                   <ListItem key={item.text} button>
                     <ListItemIcon>{item.icon}</ListItemIcon>
