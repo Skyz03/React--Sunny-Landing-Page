@@ -1,4 +1,7 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Fruits = (props) => {
   const styles = {
@@ -7,7 +10,12 @@ const Fruits = (props) => {
 
   return (
     <div id="fruits" className="fruits__row" style={styles}>
-      <div className="fruits__text">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        className="fruits__text"
+      >
         <h3>{props.heading}</h3>
         <p>{props.content}</p>
 

@@ -3,6 +3,9 @@ import Container from "@mui/material/Container";
 import card1 from "../images/image-emily.jpg";
 import card2 from "../images/image-jennie.jpg";
 import card3 from "../images/image-thomas.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Testimonials = (props) => {
   return (
@@ -10,11 +13,11 @@ const Testimonials = (props) => {
       <div className="testimonials">
         <div className="testimonials__container">
           <div className="testimonials__header">
-            <h3>Client Testimonials</h3>
+            <h3 data-aos="fade-up-right">Client Testimonials</h3>
           </div>
 
           <div className="testimonials__text">
-            <div className="testimonials__card">
+            <div className="testimonials__card" data-aos="zoom-out-down">
               <img className="testimonials__avatar" src={card1} alt="" />
               <p className="testimonials__review">
                 We put our trust in Sunnyside and they delivered , making sure
@@ -25,7 +28,7 @@ const Testimonials = (props) => {
               <p className="testimonials__pos">Marketing Director</p>
             </div>
 
-            <div className="testimonials__card">
+            <div className="testimonials__card" data-aos="zoom-out-down">
               <img className="testimonials__avatar" src={card3} alt="" />
               <p className="testimonials__review">
                 Sunnyside's enthusiasm coupled with their keen interest in our
@@ -36,7 +39,7 @@ const Testimonials = (props) => {
               <p className="testimonials__pos">Cheif Operating Officer</p>
             </div>
 
-            <div className="testimonials__card">
+            <div className="testimonials__card" data-aos="zoom-out-down">
               <img className="testimonials__avatar" src={card2} alt="" />
               <p className="testimonials__review">
                 Incredible and result! Our sales increased over 400% when we
