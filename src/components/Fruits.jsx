@@ -6,7 +6,7 @@ const Fruits = (props) => {
   };
 
   return (
-    <div className="fruits__row" style={styles}>
+    <div id="fruits" className="fruits__row" style={styles}>
       <div className="fruits__text">
         <h3>{props.heading}</h3>
         <p>{props.content}</p>
