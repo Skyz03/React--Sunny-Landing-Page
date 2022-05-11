@@ -68,6 +68,18 @@ ul {
 
 // Hero section
 
+@keyframes pulse {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
 .hero {
   position: relative;
   background-color: #3ebfff;
@@ -103,6 +115,7 @@ ul {
   position: absolute;
   bottom: 27%;
   cursor: pointer;
+  animation: pulse 2s infinite;
 }
 
 // Fruits
