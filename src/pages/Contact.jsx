@@ -1,6 +1,9 @@
 import React from "react";
 import { useFormik } from "formik";
 import telephone from "../images/telephone.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const validate = (values) => {
   const errors = {};
@@ -52,7 +55,7 @@ const Contact = () => {
   });
 
   return (
-    <div className="contact">
+    <div className="contact" data-aos="fade-left">
       <div className="contact__left">
         <img src={telephone} alt="call" />
       </div>
@@ -71,6 +74,7 @@ const Contact = () => {
             type="text"
             onChange={formik.handleChange}
             value={formik.values.firstName}
+            placeholder="John"
           />
 
           {formik.errors.firstName ? (
@@ -85,6 +89,7 @@ const Contact = () => {
             type="text"
             onChange={formik.handleChange}
             value={formik.values.lastName}
+            placeholder="Doe"
           />
 
           {formik.errors.lastName ? <div>{formik.errors.lastName}</div> : null}
@@ -97,6 +102,7 @@ const Contact = () => {
             type="email"
             onChange={formik.handleChange}
             value={formik.values.email}
+            placeholder="John.Doe@gmail.com"
           />
 
           {formik.errors.email ? <div>{formik.errors.email}</div> : null}
@@ -109,6 +115,7 @@ const Contact = () => {
             onChange={formik.handleChange}
             value={formik.values.message}
             rows="5"
+            placeholder="Tell us about your queries"
           />
 
           {formik.errors.message ? <div>{formik.errors.message}</div> : null}

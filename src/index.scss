@@ -407,12 +407,20 @@ ul {
   justify-content: center;
   padding: 3rem 0;
 
+  @media (max-width: 575px) {
+    flex-direction: column;
+  }
+
   &__title {
     font-family: "Fraunces", serif;
     color: #3ebfff;
     font-size: 3rem;
     padding: 1rem 0;
     letter-spacing: 0.05em;
+
+    @media (max-width: 575px) {
+      font-size: 2rem;
+    }
   }
 
   &__subtitle {
@@ -426,6 +434,10 @@ ul {
       max-width: 80%;
       width: 100%;
       border-radius: 10px;
+
+      @media (max-width: 575px) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -445,10 +457,12 @@ ul {
       }
 
       input {
-        border: 2px solid #3ebfff;
+        padding: 0.5rem 1rem;
+        border: 1px solid #3ebfff;
       }
       textarea {
-        border: 2px solid #3ebfff;
+        padding: 0.5rem 1rem;
+        border: 1px solid #3ebfff;
       }
     }
   }
