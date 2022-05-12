@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       {!done ? (
-        <Loader color="#3ebfff" type="cubes" />
+        <Loader color="#3ebfff" type="spin" />
       ) : (
         <div className="App">
           <BrowserRouter>
