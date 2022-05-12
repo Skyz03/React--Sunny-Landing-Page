@@ -77,7 +77,19 @@ ul {
 }
 
 .dra-list {
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto !important;
+  padding: 1rem 2rem !important;
+
+  div {
+    padding: 10px 0;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
 }
 
 // Hero section
