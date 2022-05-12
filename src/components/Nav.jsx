@@ -125,7 +125,10 @@ const Nav = () => {
                   {" "}
                   <Tab className="nav-link" label="Services" />
                 </Link>
-                <Tab className="nav-link" label="Projects" />
+                <Link to="/projects">
+                  {" "}
+                  <Tab className="nav-link" label="Projects" />
+                </Link>
               </Tabs>
               <Link to="/contact">
                 {" "}
