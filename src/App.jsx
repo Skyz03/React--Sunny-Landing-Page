@@ -12,7 +12,7 @@ import Fruit2 from "./images/desktop/image-stand-out.jpg";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
-import About from "./pages/About";
+import Soon from "./pages/Soon";
 
 function App() {
   const content1 =
@@ -24,6 +24,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path="*" element={<Soon />} />
           <Route
             path="/"
             element={
@@ -54,15 +55,6 @@ function App() {
               <>
                 <Nav />
                 <Contact />
-              </>
-            }
-          />
-          <Route
-            path="about"
-            element={
-              <>
-                <Nav />
-                <About />
               </>
             }
           />
