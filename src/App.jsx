@@ -76,7 +76,7 @@ function App() {
                 path="contact"
                 element={
                   <>
-                    <Nav />
+                    <Nav switchTheme={switchTheme} />
                     <Contact />
                   </>
                 }
