@@ -1,7 +1,7 @@
 import React from "react";
 import hero from "../images/desktop/image-header.png";
 import ArrowDown from "../images/icon-arrow-down.svg";
-import fruits from "./Fruits";
+// import fruits from "./Fruits";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
