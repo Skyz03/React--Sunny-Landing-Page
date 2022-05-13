@@ -20,7 +20,7 @@ import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+const Nav = (props) => {
   const menuItems = [
     {
       text: "About",
@@ -137,7 +137,7 @@ const Nav = () => {
                 </Button>
               </Link>
 
-              <Switch />
+              <Switch onClick={props.switchTheme} />
             </>
           )}
         </Toolbar>

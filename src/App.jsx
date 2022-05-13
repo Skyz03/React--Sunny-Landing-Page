@@ -14,8 +14,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Soon from "./pages/Soon";
 import Loader from "./components/Loader";
+import useLocalStorage from "use-local-storage";
 
 function App() {
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [theme, setTheme] = useLocalStorage(
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
+
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
+
   const [done, setDone] = React.useState(undefined);
 
   window.addEventListener("load", () => {
@@ -32,7 +44,7 @@ function App() {
       {!done ? (
         <Loader color="#3ebfff" type="spin" />
       ) : (
-        <div className="App">
+        <div className="App" data-theme={theme}>
           <BrowserRouter>
             <Routes>
               <Route path="*" element={<Soon />} />
@@ -40,7 +52,7 @@ function App() {
                 path="/"
                 element={
                   <>
-                    <Nav />
+                    <Nav switchTheme={switchTheme} />
                     <Hero />
                     <Fruits
                       heading="Transform your brand"

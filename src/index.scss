@@ -7,6 +7,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --background: white;
+  --text-primary: black;
+}
+[data-theme="dark"] {
+  --background: black;
+  --text-primary: white;
+}
 
 body {
   background-color: #fff;
@@ -116,7 +124,7 @@ ul {
   flex-direction: column;
 
   &__text {
-    color: #fff;
+    color: var(--text-primary);
     text-transform: uppercase;
     font-size: 3rem;
     letter-spacing: 0.5rem;
@@ -150,6 +158,8 @@ ul {
   &__row {
     display: flex;
     align-items: center;
+    color: var(--text-primary);
+    background-color: var(--background);
 
     @media (max-width: 650px) {
       flex-direction: column-reverse !important;
@@ -306,6 +316,8 @@ ul {
 
 .testimonials {
   padding: 8rem 2rem;
+  color: var(--text-primary);
+  background-color: var(--background);
 
   &__header {
     font-size: 1rem;
