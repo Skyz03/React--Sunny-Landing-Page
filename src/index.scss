@@ -199,6 +199,8 @@ ul {
 
   &__button {
     background: transparent;
+    color: var(--text-primary);
+
     border: none;
     border-bottom: 5px solid yellow;
     font-family: "Fraunces", serif;
@@ -303,7 +305,7 @@ ul {
     }
     p {
       font-family: "Barlow", sans-serif;
-      padding: 0.5rem 11px;
+      padding: 0r.5rem 11px;
 
       @media (max-width: 768px) {
         font-size: 0.8rem;
