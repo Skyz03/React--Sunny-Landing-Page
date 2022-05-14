@@ -73,13 +73,13 @@ A better clean application can be made in future with a much better approach.
 
 ### Useful resources
 
-[React](https://reactjs.org/docs/getting-started.html) - For Components & all other structure use such as hooks and more
-[MaterialUI](https://mui.com/material-ui/api/app-bar/) - Layout & all such as Box, AppBar & Nav elements.
-[AnimationsOnScrool](https://michalsnik.github.io/aos/) - For Fade Animations.
-[ReactRouter](https://reactrouter.com/docs/en/v6/getting-started/tutorial) - For Simple pages creation in React
-[Formik](https://formik.org/docs/tutorial) - To Create Forms in Contact page. 
-[ThemeImplemetation](https://css-tricks.com/easy-dark-mode-and-multiple-color-themes-in-react/) - To try implement Dark/Light theme for texts.rea
-[ReactLoader](https://github.com/fakiolinho/react-loading) - To show loader while page is loading.
+- [React](https://reactjs.org/docs/getting-started.html) - For Components & all other structure use such as hooks and more
+- [MaterialUI](https://mui.com/material-ui/api/app-bar/) - Layout & all such as Box, AppBar & Nav elements.
+- [AnimationsOnScrool](https://michalsnik.github.io/aos/) - For Fade Animations.
+- [ReactRouter](https://reactrouter.com/docs/en/v6/getting-started/tutorial) - For Simple pages creation in React
+- [Formik](https://formik.org/docs/tutorial) - To Create Forms in Contact page. 
+- [ThemeImplemetation](https://css-tricks.com/easy-dark-mode-and-multiple-color-themes-in-react/) - To try implement Dark/Light theme for texts.rea
+- [ReactLoader](https://github.com/fakiolinho/react-loading) - To show loader while page is loading.
 
 
 ## Author
