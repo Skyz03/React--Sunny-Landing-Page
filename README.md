@@ -1,8 +1,8 @@
-# The Tenzies App Created using React.
+# The Sunny Landing Page App Created using React.
 
 ## Table of contents
 
-- [The Tenzies App Created using React.](#the-tenzies-app-created-using-react)
+- [The Sunny Landing Page App Created using React.](#the-tenzies-app-created-using-react)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
@@ -30,7 +30,7 @@ These main challenge for this Landing Page are:
 
 ### Screenshot
 
-![image](https://user-images.githubusercontent.com/42742924/161430806-d95dcd1b-94cb-4f54-bf5d-c688394c7b05.png)
+![image](https://user-images.githubusercontent.com/42742924/168416128-d36b0d34-5d70-4bbf-9b4f-9d2b6fa7aac8.png)
 
 
 ### Links
