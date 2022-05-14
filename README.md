@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# The Tenzies App Created using React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+- [The Tenzies App Created using React.](#the-tenzies-app-created-using-react)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This a Landing Page for SunnySide created using ```create react app```. It has a lot of featues integrated in it such as ```Responsive Design, Navigation menu(Mobile from Material UI), React Routes go throught diffrent pages, Simple Text Theme Changer, React Forms and Some Animations in the Home Page```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+These main challenge for this Landing Page are:
+- Create different React Components.
+- Create different Pages such as Contact Page & Coming Soon page.
+- Use of Material UI library to implement the design with the support of Custom CSS where necessary.
+- Implementing different npm libraries such as Formik & Loading.
 
-### `npm test`
+### Screenshot
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/42742924/161430806-d95dcd1b-94cb-4f54-bf5d-c688394c7b05.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Solution URL: [Code](https://github.com/Skyz03/React--Sunny-Landing-Page)
+- Live Site URL: [Live](https://skyz03.github.io/React--Sunny-Landing-Page)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+My Brief Working process for this landing page includes:
+1. Thinking in React to break Components. 
+2. Creating the Components as per the design such as Nav.jsx and others.
+3. Adding Animations on scroll in the Home Page to make it Complete.
+4. Used React Router to implement diffrent pages such as Coming Soon & Contact Page.
+5. Implement Formik for Contact Page.
+6. Implement React Loading Library in the App.
+7. Implement Theme such as Dark/Light Theme.
+8. Deply in Github.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Built with
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React](https://reactjs.org/) - JS library
+- Material UI
+- Semantic HTML5 markup
+- CSS custom properties
+- Formik
+- AOS (Animation on scroll)
+- React Load
+- Local Storage for Theme.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### What I learned
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+During this project I learned a lot of React techniques as I implemented the fundamentals what I leanred to create this landing page.
 
-## Learn More
+Plus points right now is I implemented diffrent external libraries such as Formik, React Load and many more which are integrated in this application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Continued development
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A better clean application can be made in future with a much better approach.
 
-### Code Splitting
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[React](https://reactjs.org/docs/getting-started.html) - For Components & all other structure use such as hooks and more
+[MaterialUI](https://mui.com/material-ui/api/app-bar/) - Layout & all such as Box, AppBar & Nav elements.
+[AnimationsOnScrool](https://michalsnik.github.io/aos/) - For Fade Animations.
+[ReactRouter](https://reactrouter.com/docs/en/v6/getting-started/tutorial) - For Simple pages creation in React
+[Formik](https://formik.org/docs/tutorial) - To Create Forms in Contact page. 
+[ThemeImplemetation](https://css-tricks.com/easy-dark-mode-and-multiple-color-themes-in-react/) - To try implement Dark/Light theme for texts.rea
+[ReactLoader](https://github.com/fakiolinho/react-loading) - To show loader while page is loading.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
+Skyz03
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bob for free React course from Scrimba.
